@@ -1,0 +1,53 @@
+    /* Загальний стиль для всіх фігур */
+    .shape {
+        stroke-width: 5;
+    }
+
+    /* Стилі для квадрата */
+    .square {
+        stroke: #ff0000;  
+        fill: #ffff00;    
+    }
+
+    /* Стилі для прямокутника */
+    .rectangle {
+        stroke: #0000ff;  
+        fill: #00ff00;    
+    }
+
+    /* Стилі для анімованої фігури (коло) */
+    .animate {
+        stroke: #800080;  
+        fill: #ff69b4;    
+        animation: changeColors 3s infinite alternate;
+        stroke-dasharray: 15;
+        stroke-dashoffset: 0;
+    }
+
+    /* Стилі для еліпса */
+    .ellipse {
+        stroke: #ffa500;  
+        fill: #add8e6;    
+    }
+
+    /* Анімація */
+    @keyframes changeColors {
+        0% {
+          stroke: #800080;
+          fill: #ff69b4;
+          stroke-dasharray: 15;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          stroke: #008000;
+          fill: #ffff00;
+          stroke-dasharray: 5;
+          stroke-dashoffset: 10;
+        }
+        100% {
+          stroke: #ff0000;
+          fill: #00ffff;
+          stroke-dasharray: 15;
+          stroke-dashoffset: 0;
+        }
+      }
